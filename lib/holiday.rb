@@ -40,10 +40,10 @@ end
 def all_holidays_with_bbq(holiday_hash)
     new_array = []
     holiday_hash.each do |season, holiday|
-      holiday.each do |item|
+      holiday.each do |name, item|
         binding.pry
         if item.include? ("BBQ")
-          new_array << item[0]
+          new_array << item
 
         end
       end
